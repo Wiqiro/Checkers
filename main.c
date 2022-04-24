@@ -29,10 +29,7 @@ int main(int argc, char* argv[]) {
     PrintBoard(CheckersBoard,size);
     printf("Whites begin !\n");
 
-    do {
-        
-       
-        
+    do {        
         do {
             do {
                 printf("Enter the piece you want to move\n");
