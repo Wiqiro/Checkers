@@ -29,7 +29,8 @@ int main(int argc, char* argv[]) {
     PrintBoard(CheckersBoard,size);
     printf("Whites begin !\n");
 
-    do {        
+    do {   
+             
         do {
             do {
                 printf("Enter the piece you want to move\n");
@@ -63,8 +64,7 @@ int main(int argc, char* argv[]) {
             PrintBoard(CheckersBoard,size);
             printf("It's blacks turn !\n");
         }
-        
-        
+
     } while(blackpieces < size*3/2 && whitepieces < size*3/2);
 
     if (blackpieces == 0) {
@@ -72,6 +72,4 @@ int main(int argc, char* argv[]) {
     } else {
         printf("Blacks win !");
     }
-
 }
-
