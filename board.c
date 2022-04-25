@@ -128,6 +128,8 @@ void PrintBoard(Piece** board, int size) {
 Bool MoveCheck(Piece** board, int size, int startcol, int startrow, int targcol, int targrow) {
     Bool okmove = 0;
     if (board[targcol][targrow].type == 0) {
+
+
         if (abs(targcol-startcol) == abs(targrow-startrow) && targrow<size && targrow>=0 && targcol>=0 && targcol<size ) {
 
             if (board[startcol][startrow].type == 1 && board[startcol][startrow].color == 0) {
@@ -157,6 +159,9 @@ Bool MoveCheck(Piece** board, int size, int startcol, int startrow, int targcol,
             printf("Forbidden move !\n");
             
         }
+
+
+        
     } else {
         printf("There is already a piece in this case !\n");
     }
